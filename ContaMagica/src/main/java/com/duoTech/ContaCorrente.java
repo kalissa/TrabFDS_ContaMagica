@@ -5,10 +5,11 @@ public class ContaCorrente {
   private static String nomeCorrentista;
   private static String nroConta;
 
-  public ContaCorrente(double saldo, String nome, String conta) {
+  public ContaCorrente(double saldo, String nome, String nroConta) {
+    ContaCorrente conta = new ContaSilver(saldo, nome, nome);
     this.saldo = saldo;
     this.nomeCorrentista = nome;
-    this.nroConta = conta;
+    this.nroConta = nroConta;
   }
 
     public String getNumeroConta(){
